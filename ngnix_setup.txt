@@ -13,4 +13,4 @@ sudo systemctl enable nginx
 
 sudo systemctl status nginx
 
-nginx -t
+nginx -t  to check the configuration files are correct or not

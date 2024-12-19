@@ -1,0 +1,11 @@
+server {
+    listen 85;  # Listen on port 81
+    server_name localhost;  # Replace with your server's domain or IP if needed
+
+    root /usr/share/nginx/html/BG;  # Path to your MobileManagement files
+    index index.html;  # Default file to serve
+
+    location / {
+        try_files $uri $uri/ =404;  # Ensure valid files are served
+    }
+}

@@ -1,0 +1,16 @@
+1.place the folder of the react build inside the 
+  cd /etc/share/nginx/html
+
+2.go to the following path
+cd /etc/nginx/sites-available
+
+3.create the conf file for specific reactbuild
+nano bg
+
+
+4.as per name replace the name for react
+sudo ln -s /etc/nginx/sites-available/bg /etc/nginx/sites-enabled/
+
+5.systemctl reload nginx
+  systemctl start nginx
+  systemctl restart nginx

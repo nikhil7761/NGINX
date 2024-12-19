@@ -1,0 +1,17 @@
+[Unit]
+Description=Example .NET Web API App running on Linux
+ 
+[Service]
+WorkingDirectory=/usr/share/nginx/html/BG/BankGuarantee_API/
+ExecStart=/usr/bin/dotnet /usr/share/nginx/html/BG/BankGuarantee_API/BankGuarantee_API.dll
+Restart=always
+RestartSec=10
+KillSignal=SIGINT
+SyslogIdentifier=dotnet-example
+User=www-data
+Environment=ASPNETCORE_ENVIRONMENT=Production
+Environment=DOTNET_NOLOGO=true
+Environment=ASPNETCORE_URLS=http://localhost:4578  # Add this line to specify the port
+ 
+[Install]
+WantedBy=multi-user.target

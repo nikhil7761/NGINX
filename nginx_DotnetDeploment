@@ -1,0 +1,9 @@
+1.place the folder of the DOTNET PUBLISH FOLDER inside the 
+cd /etc/share/nginx/html
+
+NOTE: WE HAVE TO RUN THE DLL FILE FOR DOTNET PROJECT AND IT CONTINOUSLY RUN IN BACKGROUND
+2. Then we have create the service file batch file to continously RUN
+
+3.create service file as per 5servicedotnet
+
+
