@@ -11,6 +11,9 @@ nano bg
 4.as per name replace the name for react
 sudo ln -s /etc/nginx/sites-available/bg /etc/nginx/sites-enabled/
 
+5.check you are written its right
+sudo nginx -t
+
 5.systemctl reload nginx
   systemctl start nginx
   systemctl restart nginx
